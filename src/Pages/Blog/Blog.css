@@ -1,0 +1,15 @@
+.detail-content {
+    display: flex;
+    flex-direction: column;
+
+}
+.detail-content .item{
+    display: flex;
+    border-bottom: 1px solid #f2f2f2;
+}
+.detail-content .item .title{
+    width: 300px;
+}
+.detail-content .item .content{
+    flex:1;
+}

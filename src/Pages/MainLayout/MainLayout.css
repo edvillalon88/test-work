@@ -1,0 +1,14 @@
+.app{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: column;
+}
+.app > .content{
+    flex: 1;
+}
+.links-content{
+    display: flex;
+    gap:15px;
+}

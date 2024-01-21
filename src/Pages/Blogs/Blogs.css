@@ -1,0 +1,7 @@
+.blogs-container > div{
+    width:90%
+}
+.find-new{
+    display: flex;
+    justify-content: space-between;
+}
