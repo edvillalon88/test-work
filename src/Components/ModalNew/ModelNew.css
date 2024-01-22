@@ -1,4 +1,4 @@
-.form-add-blog{
+.form-add-blog .body-form{
     display: flex;
     flex-direction: column;
     gap: 15px;

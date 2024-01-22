@@ -1,18 +1,25 @@
 import React from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
+import {
+  useHistory
+} from "react-router-dom";
 import './GridBlog.css';
-const products = [ { id: '1', name: 'text 2' }, { id: '2', name: 'text 2'} ];
 const columns = [{
   dataField: 'id',
-  text: 'Product ID'
+  text: 'ID'
 }, {
-  dataField: 'name',
-  text: 'Product Name'
+  dataField: 'title',
+  text: 'Title'
+},{
+  dataField: 'date',
+  text: 'Date'
 }];
 
 const GridBlog = ({ blogs }) =>{
+    const navigate = useHistory();
     const handleOnSelect = (data)=>{
         console.log('data', data);
+        navigate.push(`/blog/${data.id}`)
     }
     const selectRow = {
         hideSelectColumn: true,
@@ -21,7 +28,7 @@ const GridBlog = ({ blogs }) =>{
       };
     return(
         <div className='grid-blogs-content'>
-            <BootstrapTable keyField='id' data={ products } columns={ columns } selectRow={ selectRow } />
+            <BootstrapTable keyField='id' data={ blogs || [] } columns={ columns } selectRow={ selectRow } />
         </div>
     )
 }

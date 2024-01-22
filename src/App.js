@@ -6,10 +6,12 @@ import {
   Link
 } from "react-router-dom";
 import MainLayout from "./Pages/MainLayout";
+import { createBrowserHistory } from 'history';
 import './App.css';
+export const history = createBrowserHistory()
 function App() {
   return (
-    <Router>
+    <Router history={history}>
       <Switch>
           <Route path="/">
             <MainLayout />
