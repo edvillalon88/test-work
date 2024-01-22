@@ -1,4 +1,4 @@
-# Testing de Ract
+# Testing de React
 Aplicacion de prueba para test de React, Js, Css
 
 
