@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Testing de Ract
+Aplicacion de prueba para test de React, Js, Css
 
-Testing de Ract
 
 ## STACK
 
